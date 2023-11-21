@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "prueba-uvicorn-fast-api"
+version = "0.1.0"
+description = "A fast api boiler"
+authors = ["jose <jose.s.contacto@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prueba_uvicorn_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.24.0.post1"
+fastapi = "^0.104.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
